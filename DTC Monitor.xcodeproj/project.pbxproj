@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		9B9650DB6A5EEC27FE6A8B3A /* Pods_DTC_Monitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E523585EB1398A2FEF3BAAF /* Pods_DTC_Monitor.framework */; };
 		B7AA4338207211D700B3E630 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AA4337207211D700B3E630 /* AppDelegate.swift */; };
-		B7AA433A207211D700B3E630 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AA4339207211D700B3E630 /* ViewController.swift */; };
+		B7AA433A207211D700B3E630 /* DTCListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AA4339207211D700B3E630 /* DTCListViewController.swift */; };
 		B7AA433D207211D700B3E630 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AA433B207211D700B3E630 /* Main.storyboard */; };
 		B7AA433F207211D700B3E630 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7AA433E207211D700B3E630 /* Assets.xcassets */; };
 		B7AA4342207211D700B3E630 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AA4340207211D700B3E630 /* LaunchScreen.storyboard */; };
 		B7AA434A207219AF00B3E630 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B7AA4349207219AF00B3E630 /* .gitignore */; };
+		B7B08E5320724627005BA379 /* DTCViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B08E5120724627005BA379 /* DTCViewCell.swift */; };
+		B7B08E5420724627005BA379 /* DTCViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B08E5220724627005BA379 /* DTCViewCell.xib */; };
+		B7B08E562072492B005BA379 /* DTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B08E552072492B005BA379 /* DTC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +25,15 @@
 		9A8A4FF574C72FF6B5E5BD6B /* Pods-DTC Monitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTC Monitor.release.xcconfig"; path = "Pods/Target Support Files/Pods-DTC Monitor/Pods-DTC Monitor.release.xcconfig"; sourceTree = "<group>"; };
 		B7AA4334207211D700B3E630 /* DTC Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DTC Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AA4337207211D700B3E630 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B7AA4339207211D700B3E630 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7AA4339207211D700B3E630 /* DTCListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTCListViewController.swift; sourceTree = "<group>"; };
 		B7AA433C207211D700B3E630 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7AA433E207211D700B3E630 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7AA4341207211D700B3E630 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7AA4343207211D700B3E630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7AA4349207219AF00B3E630 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B7B08E5120724627005BA379 /* DTCViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTCViewCell.swift; sourceTree = "<group>"; };
+		B7B08E5220724627005BA379 /* DTCViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DTCViewCell.xib; sourceTree = "<group>"; };
+		B7B08E552072492B005BA379 /* DTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +88,11 @@
 			isa = PBXGroup;
 			children = (
 				B7AA4337207211D700B3E630 /* AppDelegate.swift */,
-				B7AA4339207211D700B3E630 /* ViewController.swift */,
+				B7AA4339207211D700B3E630 /* DTCListViewController.swift */,
+				B7B08E552072492B005BA379 /* DTC.swift */,
 				B7AA433B207211D700B3E630 /* Main.storyboard */,
+				B7B08E5120724627005BA379 /* DTCViewCell.swift */,
+				B7B08E5220724627005BA379 /* DTCViewCell.xib */,
 				B7AA433E207211D700B3E630 /* Assets.xcassets */,
 				B7AA4340207211D700B3E630 /* LaunchScreen.storyboard */,
 				B7AA4343207211D700B3E630 /* Info.plist */,
@@ -154,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7AA434A207219AF00B3E630 /* .gitignore in Resources */,
+				B7B08E5420724627005BA379 /* DTCViewCell.xib in Resources */,
 				B7AA4342207211D700B3E630 /* LaunchScreen.storyboard in Resources */,
 				B7AA433F207211D700B3E630 /* Assets.xcassets in Resources */,
 				B7AA433D207211D700B3E630 /* Main.storyboard in Resources */,
@@ -218,8 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7AA433A207211D700B3E630 /* ViewController.swift in Sources */,
+				B7AA433A207211D700B3E630 /* DTCListViewController.swift in Sources */,
 				B7AA4338207211D700B3E630 /* AppDelegate.swift in Sources */,
+				B7B08E5320724627005BA379 /* DTCViewCell.swift in Sources */,
+				B7B08E562072492B005BA379 /* DTC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

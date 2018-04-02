@@ -12,10 +12,22 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let nav1 = UINavigationController()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let DTCList = storyboard.instantiateViewController(withIdentifier: "DTCListViewController") as! DTCListViewController
+        nav1.viewControllers = [DTCList]
+        self.window!.rootViewController = nav1
+        self.window?.makeKeyAndVisible()
+        
+        
         return true
     }
 
