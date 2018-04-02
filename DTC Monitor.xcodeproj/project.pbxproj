@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B9650DB6A5EEC27FE6A8B3A /* Pods_DTC_Monitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E523585EB1398A2FEF3BAAF /* Pods_DTC_Monitor.framework */; };
+		B7AA4338207211D700B3E630 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AA4337207211D700B3E630 /* AppDelegate.swift */; };
+		B7AA433A207211D700B3E630 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AA4339207211D700B3E630 /* ViewController.swift */; };
+		B7AA433D207211D700B3E630 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AA433B207211D700B3E630 /* Main.storyboard */; };
+		B7AA433F207211D700B3E630 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7AA433E207211D700B3E630 /* Assets.xcassets */; };
+		B7AA4342207211D700B3E630 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AA4340207211D700B3E630 /* LaunchScreen.storyboard */; };
+		B7AA434A207219AF00B3E630 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B7AA4349207219AF00B3E630 /* .gitignore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E523585EB1398A2FEF3BAAF /* Pods_DTC_Monitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DTC_Monitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		957FE42B41575BB3A024D6D3 /* Pods-DTC Monitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTC Monitor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DTC Monitor/Pods-DTC Monitor.debug.xcconfig"; sourceTree = "<group>"; };
+		9A8A4FF574C72FF6B5E5BD6B /* Pods-DTC Monitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTC Monitor.release.xcconfig"; path = "Pods/Target Support Files/Pods-DTC Monitor/Pods-DTC Monitor.release.xcconfig"; sourceTree = "<group>"; };
+		B7AA4334207211D700B3E630 /* DTC Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DTC Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7AA4337207211D700B3E630 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7AA4339207211D700B3E630 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7AA433C207211D700B3E630 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7AA433E207211D700B3E630 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7AA4341207211D700B3E630 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7AA4343207211D700B3E630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7AA4349207219AF00B3E630 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7AA4331207211D700B3E630 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9650DB6A5EEC27FE6A8B3A /* Pods_DTC_Monitor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		313977DE255540B17BA8869C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E523585EB1398A2FEF3BAAF /* Pods_DTC_Monitor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31F0BD2CEBC79EAE47018F1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				957FE42B41575BB3A024D6D3 /* Pods-DTC Monitor.debug.xcconfig */,
+				9A8A4FF574C72FF6B5E5BD6B /* Pods-DTC Monitor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B7AA432B207211D600B3E630 = {
+			isa = PBXGroup;
+			children = (
+				B7AA4349207219AF00B3E630 /* .gitignore */,
+				B7AA4336207211D700B3E630 /* DTC Monitor */,
+				B7AA4335207211D700B3E630 /* Products */,
+				31F0BD2CEBC79EAE47018F1F /* Pods */,
+				313977DE255540B17BA8869C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B7AA4335207211D700B3E630 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7AA4334207211D700B3E630 /* DTC Monitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7AA4336207211D700B3E630 /* DTC Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				B7AA4337207211D700B3E630 /* AppDelegate.swift */,
+				B7AA4339207211D700B3E630 /* ViewController.swift */,
+				B7AA433B207211D700B3E630 /* Main.storyboard */,
+				B7AA433E207211D700B3E630 /* Assets.xcassets */,
+				B7AA4340207211D700B3E630 /* LaunchScreen.storyboard */,
+				B7AA4343207211D700B3E630 /* Info.plist */,
+			);
+			path = "DTC Monitor";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7AA4333207211D700B3E630 /* DTC Monitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7AA4346207211D700B3E630 /* Build configuration list for PBXNativeTarget "DTC Monitor" */;
+			buildPhases = (
+				D2AE09CCAE08F73AE661FEB8 /* [CP] Check Pods Manifest.lock */,
+				B7AA4330207211D700B3E630 /* Sources */,
+				B7AA4331207211D700B3E630 /* Frameworks */,
+				B7AA4332207211D700B3E630 /* Resources */,
+				A8593F8BFA133626ED08E2A6 /* [CP] Embed Pods Frameworks */,
+				F3387F56696C5A5DEE0261C6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DTC Monitor";
+			productName = "DTC Monitor";
+			productReference = B7AA4334207211D700B3E630 /* DTC Monitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7AA432C207211D600B3E630 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Gokhan Cengiz";
+				TargetAttributes = {
+					B7AA4333207211D700B3E630 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B7AA432F207211D600B3E630 /* Build configuration list for PBXProject "DTC Monitor" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7AA432B207211D600B3E630;
+			productRefGroup = B7AA4335207211D700B3E630 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7AA4333207211D700B3E630 /* DTC Monitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7AA4332207211D700B3E630 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7AA434A207219AF00B3E630 /* .gitignore in Resources */,
+				B7AA4342207211D700B3E630 /* LaunchScreen.storyboard in Resources */,
+				B7AA433F207211D700B3E630 /* Assets.xcassets in Resources */,
+				B7AA433D207211D700B3E630 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A8593F8BFA133626ED08E2A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DTC Monitor/Pods-DTC Monitor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2AE09CCAE08F73AE661FEB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DTC Monitor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3387F56696C5A5DEE0261C6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DTC Monitor/Pods-DTC Monitor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7AA4330207211D700B3E630 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7AA433A207211D700B3E630 /* ViewController.swift in Sources */,
+				B7AA4338207211D700B3E630 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B7AA433B207211D700B3E630 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7AA433C207211D700B3E630 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7AA4340207211D700B3E630 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7AA4341207211D700B3E630 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7AA4344207211D700B3E630 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7AA4345207211D700B3E630 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7AA4347207211D700B3E630 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 957FE42B41575BB3A024D6D3 /* Pods-DTC Monitor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DTC Monitor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gcengiz.DTC-Monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7AA4348207211D700B3E630 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A8A4FF574C72FF6B5E5BD6B /* Pods-DTC Monitor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DTC Monitor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gcengiz.DTC-Monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7AA432F207211D600B3E630 /* Build configuration list for PBXProject "DTC Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7AA4344207211D700B3E630 /* Debug */,
+				B7AA4345207211D700B3E630 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7AA4346207211D700B3E630 /* Build configuration list for PBXNativeTarget "DTC Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7AA4347207211D700B3E630 /* Debug */,
+				B7AA4348207211D700B3E630 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7AA432C207211D600B3E630 /* Project object */;
+}
