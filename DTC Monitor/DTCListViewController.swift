@@ -8,134 +8,80 @@
 
 import UIKit
 
-class DTCListViewController: UIViewController {
-   
-    @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var tableView: UITableView!
+class DTCListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var DTCArray: [DTC] = []
-    var pageCount = 1
-    var searchText = ""
+    var DTCArray : [DTC] = []
+    
+    @IBOutlet weak var DTCTableView: UITableView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        prepareTableView()
+        DTCTableView.delegate = self
+        DTCTableView.dataSource = self
         
+        prepareDTCList()
         prepareNavigationBar()
         
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func showDTCDetails(of index: Int) {
-        
-        
         
     }
     
-    fileprivate func prepareTableView(){
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(UINib(nibName: "DTCViewCell", bundle: nil), forCellReuseIdentifier: "DTCViewCell")
-        searchBar.delegate = self
+    fileprivate func prepareNavigationBar() {
+        navigationItem.title = "DTCList"
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.barStyle = .blackTranslucent
+    }
+    
+    func showDetails(ofDTCAt index: Int) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        guard let DTCDetailVC = storyboard.instantiateViewController(withIdentifier: "DTCDetailViewController") as? DTCDetailViewController else {
+            return
+        }
+        
+        DTCDetailVC.myDTC = DTCArray[index]
+        
+        self.navigationController?.pushViewController(DTCDetailVC, animated: true)
         
     }
     
     fileprivate func prepareDTCList(){
+        let DTC1 = DTC(code: "0001", title: "DTC1", possibleReasons: "wires of different wheel speed sensors are shorted to each other EPM electronic circuit is damaged", actions: "Check the lines and plugs between EPM and wheel-speed sensor for short-circuits. Repair wiring if faulty If fault is not found in the wiring, replace EPM.")
+        let DTC2 = DTC(code: "0002", title: "DTC2", possibleReasons: "wires of different wheel speed sensors are shorted to each other EPM electronic circuit is damaged", actions: "Check the lines and plugs between EPM and wheel-speed sensor for short-circuits. Repair wiring if faulty If fault is not found in the wiring, replace EPM.")
+        let DTC3 = DTC(code: "0003", title: "DTC3", possibleReasons: "wires of different wheel speed sensors are shorted to each other EPM electronic circuit is damaged", actions: "Check the lines and plugs between EPM and wheel-speed sensor for short-circuits. Repair wiring if faulty If fault is not found in the wiring, replace EPM.")
+        let DTC4 = DTC(code: "0004", title: "DTC4", possibleReasons: "wires of different wheel speed sensors are shorted to each other EPM electronic circuit is damaged", actions: "Check the lines and plugs between EPM and wheel-speed sensor for short-circuits. Repair wiring if faulty If fault is not found in the wiring, replace EPM.")
         
-    }
-    
-    
-
-}
-
-extension DTCListViewController:UITableViewDelegate, UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        let index = indexPath.row
-        showDTCDetails(of: index)
-        searchBar.resignFirstResponder()
-        
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 128
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        guard let cell:DTCViewCell = tableView.dequeueReusableCell(withIdentifier: "DTCViewCell") as? DTCViewCell else {
-            return UITableViewCell()
-            
-        }
-        
-        if indexPath.row >= DTCArray.count {
-            return UITableViewCell()
-        }
-        
-        let DTCAtIndex = DTCArray[indexPath.row]
-        
-        if let code = DTCAtIndex.code {
-            cell.CellCodeView.text = code
-        }
-        
-        cell.CellTitleView.text = DTCAtIndex.title
-        
-        
-        
-        
-        return cell
+        DTCArray = [DTC1, DTC2, DTC3, DTC4]
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DTCArray.count
     }
     
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = DTCTableView.dequeueReusableCell(withIdentifier: "cell")
         
-        if indexPath.row == DTCArray.count-1 {
-            pageCount += 1
-            prepareDTCList()
-        }
+        cell?.textLabel?.text = DTCArray[indexPath.row].code
+        cell?.detailTextLabel?.text = DTCArray[indexPath.row].title
+        
+        return cell!
+        
+        
+        
     }
     
-    fileprivate func prepareNavigationBar(){
-        navigationItem.title = "Movies List"
-        navigationController?.navigationBar.tintColor = .white
-        navigationController?.navigationBar.barStyle = .blackTranslucent
-        //navigationController?.navigationBar.barTintColor = Color.barColor
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        let selectedIndex = indexPath.row
+        showDetails(ofDTCAt: selectedIndex) //Seçtiğimiz hücrenin index'ine göre detay gösterme fonk'unu çağırıyor.
+        tableView.deselectRow(at: indexPath, animated: true) // Bastığımız cell basılı kalmasın diye
         
     }
+    
+    
     
 }
-
-extension DTCListViewController:UISearchBarDelegate{
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        DTCArray.removeAll()
-        pageCount = 1
-        self.searchText = searchText.replacingOccurrences(of: " ", with: "+")
-        prepareDTCList()
-        
-    }
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.resignFirstResponder()
-        
-    }
-    
-}
-
-
-
-

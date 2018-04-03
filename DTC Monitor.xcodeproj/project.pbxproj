@@ -14,9 +14,8 @@
 		B7AA433F207211D700B3E630 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7AA433E207211D700B3E630 /* Assets.xcassets */; };
 		B7AA4342207211D700B3E630 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AA4340207211D700B3E630 /* LaunchScreen.storyboard */; };
 		B7AA434A207219AF00B3E630 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B7AA4349207219AF00B3E630 /* .gitignore */; };
-		B7B08E5320724627005BA379 /* DTCViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B08E5120724627005BA379 /* DTCViewCell.swift */; };
-		B7B08E5420724627005BA379 /* DTCViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B08E5220724627005BA379 /* DTCViewCell.xib */; };
 		B7B08E562072492B005BA379 /* DTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B08E552072492B005BA379 /* DTC.swift */; };
+		B7B08EBC20738D0D005BA379 /* DTCDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B08EBB20738D0D005BA379 /* DTCDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +30,8 @@
 		B7AA4341207211D700B3E630 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7AA4343207211D700B3E630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7AA4349207219AF00B3E630 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		B7B08E5120724627005BA379 /* DTCViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTCViewCell.swift; sourceTree = "<group>"; };
-		B7B08E5220724627005BA379 /* DTCViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DTCViewCell.xib; sourceTree = "<group>"; };
 		B7B08E552072492B005BA379 /* DTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTC.swift; sourceTree = "<group>"; };
+		B7B08EBB20738D0D005BA379 /* DTCDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DTCDetailViewController.swift; path = "/Users/gokhancengiz/Desktop/DTC Monitor/DTC Monitor/DTCDetailViewController.swift"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +87,9 @@
 			children = (
 				B7AA4337207211D700B3E630 /* AppDelegate.swift */,
 				B7AA4339207211D700B3E630 /* DTCListViewController.swift */,
+				B7B08EBB20738D0D005BA379 /* DTCDetailViewController.swift */,
 				B7B08E552072492B005BA379 /* DTC.swift */,
 				B7AA433B207211D700B3E630 /* Main.storyboard */,
-				B7B08E5120724627005BA379 /* DTCViewCell.swift */,
-				B7B08E5220724627005BA379 /* DTCViewCell.xib */,
 				B7AA433E207211D700B3E630 /* Assets.xcassets */,
 				B7AA4340207211D700B3E630 /* LaunchScreen.storyboard */,
 				B7AA4343207211D700B3E630 /* Info.plist */,
@@ -163,7 +160,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7AA434A207219AF00B3E630 /* .gitignore in Resources */,
-				B7B08E5420724627005BA379 /* DTCViewCell.xib in Resources */,
 				B7AA4342207211D700B3E630 /* LaunchScreen.storyboard in Resources */,
 				B7AA433F207211D700B3E630 /* Assets.xcassets in Resources */,
 				B7AA433D207211D700B3E630 /* Main.storyboard in Resources */,
@@ -229,8 +225,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7AA433A207211D700B3E630 /* DTCListViewController.swift in Sources */,
+				B7B08EBC20738D0D005BA379 /* DTCDetailViewController.swift in Sources */,
 				B7AA4338207211D700B3E630 /* AppDelegate.swift in Sources */,
-				B7B08E5320724627005BA379 /* DTCViewCell.swift in Sources */,
 				B7B08E562072492B005BA379 /* DTC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

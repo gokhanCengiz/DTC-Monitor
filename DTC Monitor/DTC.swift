@@ -9,6 +9,18 @@
 import Foundation
 
 class DTC {
-    var code : String?
-    var title : String?
+    var code:String = ""
+    var title:String = ""
+    var possibleReasons = ""
+    var actions = ""
+    
+    init(code: String, title: String, possibleReasons: String, actions: String) {
+        
+        self.code = code
+        self.title = title
+        self.possibleReasons = possibleReasons
+        self.actions = actions
+    }
+    
+    
 }
