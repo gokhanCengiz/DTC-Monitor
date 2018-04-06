@@ -14,19 +14,40 @@ class DTCDetailViewController: UIViewController {
     @IBOutlet weak var reasonsLabel: UILabel!
     @IBOutlet weak var actionsLabel: UILabel!
     
-    var myDTC: DTC!
+    @IBAction func seeCommentsButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "commentsSegue", sender: self)
+        
+        let CommentsVC = CommentViewController()
+        
+        
+    }
     
+    
+    static var myDTC: DTC!
+        
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        codeLabel.text = myDTC.code
-        titleLabel.text = myDTC.title
-        reasonsLabel.text = myDTC.possibleReasons
-        actionsLabel.text = myDTC.actions
+        codeLabel.text = "CTD Code: " + DTCDetailViewController.myDTC.code
+        titleLabel.text = "Code Text: " + DTCDetailViewController.myDTC.title
+        reasonsLabel.text = "Possible Reasons: " + DTCDetailViewController.myDTC.possibleReasons
+        if let a = DTCDetailViewController.myDTC.actions {
+        actionsLabel.text = "Actions: " + a
+        }
+        else {
+            actionsLabel.text = nil
+        }
+        
+        prepareNavigationBar()
+        
+       
+        
         
         
     }
+    
+  
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

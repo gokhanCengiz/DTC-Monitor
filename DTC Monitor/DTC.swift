@@ -11,16 +11,18 @@ import Foundation
 class DTC {
     var code:String = ""
     var title:String = ""
-    var possibleReasons = ""
-    var actions = ""
+    var possibleReasons:String = ""
+    var actions:String? = ""
+    var comments: [String] = ["Default Comment"]
     
-    init(code: String, title: String, possibleReasons: String, actions: String) {
+    init(code: String, title: String, possibleReasons: String) {
         
         self.code = code
         self.title = title
         self.possibleReasons = possibleReasons
-        self.actions = actions
+        
     }
+        
     
     
 }

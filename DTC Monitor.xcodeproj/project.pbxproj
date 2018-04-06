@@ -16,6 +16,8 @@
 		B7AA434A207219AF00B3E630 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B7AA4349207219AF00B3E630 /* .gitignore */; };
 		B7B08E562072492B005BA379 /* DTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B08E552072492B005BA379 /* DTC.swift */; };
 		B7B08EBC20738D0D005BA379 /* DTCDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B08EBB20738D0D005BA379 /* DTCDetailViewController.swift */; };
+		B7C382E1207513C700CC25FC /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C382E0207513C700CC25FC /* CommentViewController.swift */; };
+		B7C38341207757F800CC25FC /* dtccodes.json in Resources */ = {isa = PBXBuildFile; fileRef = B7C38340207757F800CC25FC /* dtccodes.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		B7AA4349207219AF00B3E630 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		B7B08E552072492B005BA379 /* DTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTC.swift; sourceTree = "<group>"; };
 		B7B08EBB20738D0D005BA379 /* DTCDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DTCDetailViewController.swift; path = "/Users/gokhancengiz/Desktop/DTC Monitor/DTC Monitor/DTCDetailViewController.swift"; sourceTree = "<absolute>"; };
+		B7C382E0207513C700CC25FC /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		B7C38340207757F800CC25FC /* dtccodes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = dtccodes.json; path = ../../../Downloads/dtccodes.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +94,11 @@
 				B7B08EBB20738D0D005BA379 /* DTCDetailViewController.swift */,
 				B7B08E552072492B005BA379 /* DTC.swift */,
 				B7AA433B207211D700B3E630 /* Main.storyboard */,
+				B7C382E0207513C700CC25FC /* CommentViewController.swift */,
 				B7AA433E207211D700B3E630 /* Assets.xcassets */,
 				B7AA4340207211D700B3E630 /* LaunchScreen.storyboard */,
 				B7AA4343207211D700B3E630 /* Info.plist */,
+				B7C38340207757F800CC25FC /* dtccodes.json */,
 			);
 			path = "DTC Monitor";
 			sourceTree = "<group>";
@@ -163,6 +169,7 @@
 				B7AA4342207211D700B3E630 /* LaunchScreen.storyboard in Resources */,
 				B7AA433F207211D700B3E630 /* Assets.xcassets in Resources */,
 				B7AA433D207211D700B3E630 /* Main.storyboard in Resources */,
+				B7C38341207757F800CC25FC /* dtccodes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7C382E1207513C700CC25FC /* CommentViewController.swift in Sources */,
 				B7AA433A207211D700B3E630 /* DTCListViewController.swift in Sources */,
 				B7B08EBC20738D0D005BA379 /* DTCDetailViewController.swift in Sources */,
 				B7AA4338207211D700B3E630 /* AppDelegate.swift in Sources */,
